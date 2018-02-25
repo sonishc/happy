@@ -1,0 +1,557 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Gloria+Hallelujah|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Chewy|Leckerli+One|Luckiest+Guy|Shrikhand');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+@font-face { 
+	font-family: Ravie;
+	src: url("../css/fonts/Ravie Regular.ttf");
+}
+
+@font-face {
+  font-family: Xiomara;
+  src: url("../css/fonts/Xiomara-Script.ttf");
+}
+
+@font-face {
+  font-family: Graffiti2CTT;
+  src: url("../css/fonts/BenguiatGothicC-Bold.otf");
+}
+
+
+html {
+	font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+	html {
+	  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	}
+  }
+  @media screen and (min-width: 1000px) {
+	html {
+	  font-size: 18px;
+	}
+  }
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    background-size: 50% 80%  !important; 
+    background-position: center;
+    margin: 0 auto;
+  }
+  .nav-link{
+    margin: 0 auto;
+	}
+	
+	.logo {
+		grid-row: 2 !important;
+		height: 20vh;
+	}
+
+  .address-phone {
+		grid-row: 1 !important;
+		grid-column: 3 !important;
+    background-size: 100% 60%  !important; 
+    background-position: center;
+	}
+	
+
+	.address {
+		grid-row: 1 !important;
+		grid-column: 5 !important;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+	.address h3{
+		font-size: 2.3vh !important;
+		align-self: flex-end !important;
+		margin: 0 auto;
+	}
+
+  .desc1 {
+   /* font: 2.5em  Graffiti2CTT !important;*/
+  }
+  
+  .desc2 {
+		padding-left: 30px;
+    /*font: 2.5em  Graffiti2CTT !important;*/
+  }
+
+  .desc-l {
+    float: left;
+  }
+
+  .desc-r {
+    float: right;
+	}
+
+	.slide img{
+		height: 15vh !important;
+	}
+	
+	.footer {
+		background-repeat: repeat !important;
+	}
+
+	.footer div span {
+
+	}
+
+	.footer .social-net {
+		word-wrap: break-word;
+		font-size: 2.1vw !important;
+	}
+
+	.footer .social-net img {
+		width: 20%;
+	}
+
+
+}
+@media only screen and (min-width: 767px) {
+
+	.address2 {
+		display: none;
+	}
+
+	body {
+		background-image: url("../img/1.svg");
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 25% 10% 1fr 10% 25%;
+		grid-template-rows: 10vh 5vh 20vh 40vh 25vh;
+	}
+
+	.header-background {
+		grid-column: 1 / 6;
+		grid-row: 1 / span 2;
+		background-color: rgba(255, 255, 255, 0.65);
+	}
+
+	.menu {
+		grid-column: 1;
+		grid-row: 1;
+   		background-image: url("../img/Menu1.png");
+   		background-size: 35% 100%;
+    	background-repeat: no-repeat;
+		margin: 10px 10px 0px 0px;
+  }
+  
+  .nav-link{
+    background-image: none;
+    width: 40%;
+    height: 8vh;
+  }
+
+  .modal-content{
+	background-image: url("../img/1.svg");
+  }
+
+  .modal-footer button{
+	  color: #6569B3 !important;
+  }
+
+  .tab-pane ul {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+  }
+
+  .tab-pane ul li {
+	padding: 2%;
+	font: 2em  Xiomara;
+	border: 1px solid #6569B3;
+	color: #6569B3;
+	background-color: #FDF4A7;
+	margin-top: 2%;
+  }
+
+  .tabbable>ul{
+	justify-content: center;
+  }
+
+  .nav-tabs li{
+	width: 200px;
+	border: 1px dashed #6569B3;
+	margin: 2%;
+	text-align: center;
+	padding: 2%;
+	background-color: rgb(255, 245, 159);
+	margin-left: 2%;
+	font: 1em  Graffiti2CTT;
+  }
+
+  .nav-tabs li:focus {
+	background-color: #6569B3;
+  }
+
+  .nav-tabs li:hover, a:hover {  
+	  text-decoration: underline;
+	}
+
+  .nav-tabs li .active {
+	  font-style: bold;
+	  color: #6569B3;
+	  text-decoration: underline;
+  }
+
+  .tab-content div{
+	padding: 2%;
+	text-align: center;
+  }
+
+	.logo {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		background-image: url("../img/border3.png");
+		z-index: 3;
+		margin: 0 8% 0 8%;
+		background-size:  86% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.address-phone {
+		grid-column: 5;
+		grid-row: 1;
+		background-image: url("../img/Call-phone1.png");
+		background-size: 90% 90%;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-right: 5%;
+	}
+
+	.address {
+		display: flex;
+		align-items: center;
+		grid-column: 5;
+		grid-row: 2;
+  }
+  
+  .address h3 {
+		font-family: Graffiti2CTT;
+		color: #6569B3;
+  }
+
+	.address2 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row: 2;
+	}
+
+	.desc-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.desc-container div{
+		padding: 10px;
+		text-align: center;
+	}
+
+	.desc1 {
+		z-index: 2;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row: 3;
+		height: 10vh;
+    background-image: url("../img/desc.png");
+    background-size: 50% 100%;
+    border: 1px solid #6569B3;
+		font: 2em  Graffiti2CTT;
+		color: #6569B3;
+    -webkit-text-stroke:0.1px white;
+		text-shadow:
+       1px 1px 0 #fff,
+     -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+			 1px 1px 0 #fff;
+	}
+
+	.desc2 {
+		z-index: 2;
+		grid-column-start: 4;
+		grid-column-end: 6;
+		grid-row: 3;
+		height: 10vh;
+    background-image: url("../img/desc.png");
+    background-size: 50% 100%;
+    border: 1px solid #6569B3;
+		font: 2em  Graffiti2CTT;
+		color: #6569B3;
+		text-shadow: 2px 2px 2px #fff;
+	}
+
+	.main {
+		z-index: 1;
+		grid-column: 1 / span 6;
+		grid-row: 4;
+	}
+
+	.slide {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.slide div>a {
+		color: #6569B3 !important;
+		font: 1.3vw Graffiti2CTT;
+		border: 1px dashed #6569B3;
+		margin-top: 3%;
+	}
+
+	.slide>div {
+		width: 80%;
+		height: 40vh;
+	}
+
+	.slide img  {
+		height: 25vh;
+		margin: 0 auto; 
+	}
+
+	.footer {
+		grid-column: 1/6;
+		grid-row: 5;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-size: 100%;
+		background-repeat: repeat-y;
+	}
+
+	.footer div {
+		width: 100%;
+		height: 25vh;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.footer .comment{
+		text-align: left;
+		background-image: url("../img/f1.png");
+		color: #6569B3;		
+		font: 18px Xiomara;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		overflow: hidden;
+		margin: 0.1%;
+	}
+
+	.footer .comment2{
+		background-image: url("../img/f2.png");
+	}
+	
+	.footer div span b{
+		background-color: #6569B3;
+		color: white;
+	}
+
+	.social-net {
+		padding-top: 1vh;
+		overflow: hidden;
+		font: 2em  Graffiti2CTT;
+		color: #6569B3;
+	}
+
+
+	.it1 {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.it2 {
+		grid-column: 4;
+		grid-row: 1;
+	}
+
+	.item8 {
+	}
+
+	.item9 {
+	}
+
+
+	div {
+	}
+
+}
+
+/***** Mobile version *****/
+
+@media only screen and (max-width: 767px) {
+
+	body {
+		background-image: url("../img/1.svg");
+		-webkit-font-smoothing: antialiased;
+	} 
+
+	div {
+		/*border: 1px solid purple;*/
+	}
+
+	.grid-container {
+		display: grid !important;
+		grid-template-rows: 10% 22vw 30% 1fr !important;
+		grid-template-columns: 30% 40% 30% 0 0 !important;
+	}
+
+	.header-background {
+		grid-row: 1 / span 3 !important;
+		grid-column: 1 / span 4 !important;
+		background-color: rgba(255, 255, 255, 0.65);
+	}
+
+	.it1 {
+		display: none;
+	}
+
+	.it2 {
+		display: none;
+	}
+
+	.address {
+		display: none;
+	}
+
+
+	.logo {
+		grid-row: 1 !important;
+		grid-column: 1 / span 4 !important;
+		background-image: url("../img/border3.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+	}
+
+	.menu {
+		grid-row: 3;
+		grid-column: 1;
+		background-image: url("../img/Menu1.png");
+		background-position: center;
+		background-size: 20vw 20vw !important;
+		background-repeat: no-repeat;
+		margin: 0;
+	}
+	
+	.nav-link{
+		height: 8vh !important;		
+	}
+
+	.modal-content{
+		background-image: url("../img/1.svg");
+	}
+
+	.address-phone {
+		grid-row: 2 !important;
+		grid-column: 2 / span 2 !important;
+		background-image: url("../img/Call-phone1.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.address2 {
+		grid-row: 2;
+		grid-column: 1;	
+		text-align: center;
+		font: 5vw Graffiti2CTT;
+		z-index: 1;
+	}
+
+	.desc-container {
+		text-align: center;
+	}
+
+	.desc-container div img{
+		margin: 0 auto !important;
+	}
+
+	.desc1 {
+		font: 1rem Xiomara !important;
+		grid-row: 3 !important;
+		grid-column: 2/span 2;
+		height: 50%; 
+		background-color: red;
+	}
+
+	.desc2 {
+		font: 1rem Xiomara !important;
+		grid-row: 3 !important;
+		grid-column: 2/span 2;
+		padding: 0;
+	}
+
+	.main {
+		grid-row: 4;
+		grid-column: 1 / span 3;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.slide {
+		margin: 0 auto;
+	}
+
+	.slide .amber {
+		background-color: #FDF4A7 !important;
+		color: #6569B3 !important;
+		font: 14px Graffiti2CTT;
+	}
+
+	.slide>div {
+		padding: 2%;
+	}
+
+	.slide img  {
+		padding: 3%;
+		width: 100%;
+		height: 35vh !important;
+		margin: 0 auto;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		grid-row: 5;		
+		grid-column: 1 / span 3;
+		text-align: center;
+	}
+	
+	.footer .social-net {
+		order: 2;
+		padding: 5%;
+	}
+
+	.footer div{
+		order: 1;
+		font-size: 22px !important;
+		font-style: Arial;
+		background-color: white;
+		border: 5px dashed pink;
+		padding: 5%;
+		margin-top: 5%;
+	}
+
+	.footer div span{
+		font-size: 22px !important;
+		font: 22px Xiomara;
+	}
+
+	.footer div span span{
+		text-decoration: underline;
+	}
+}
